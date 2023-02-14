@@ -1,23 +1,38 @@
 import logo from './logo.svg';
-import './App.css';
+import Image from './Components/Image';
+// import Droppable from './Components/Droppable';
 
 function App() {
+  // const images = [
+  //   "https://via.placeholder.com/100x100",
+  //   // "https://via.placeholder.com/100x100",
+  //   // "https://via.placeholder.com/100x100"
+  // ];
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+      <Image/>
+      {/* <div 
+      style={{
+        height: "100px",
+        width: "100px",
+        border: "1px solid black",
+        backgroundColor:"red",
+        margin:"20px"
+      }}>
+      {images.map(image => (
+        <Image key={image} src={image} />
+      ))}
+      </div> */}
+      {/* <div
+      style={{
+        height: "100px",
+        width: "100px",
+        border: "1px solid black",
+        backgroundColor:"red"
+      }}>
+      <Droppable />
+      </div> */}
     </div>
   );
 }
