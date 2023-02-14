@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import Image from './Components/Image';
 // import Droppable from './Components/Droppable';
 
