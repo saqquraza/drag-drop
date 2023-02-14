@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const Image = ({ src }) => {
 
   const [images, setImages] = useState([
-    {id: 1, src: 'download.jpg'},
+    {id: 1, src: 'src\Components\download.jpg'},
     {id: 2, src: "https://via.placeholder.com/100x100" },
     {id: 3, src: "https://via.placeholder.com/100x100" },
   ]);
