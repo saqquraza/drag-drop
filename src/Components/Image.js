@@ -1,11 +1,14 @@
 import React, { useState } from "react";
+import img3 from '../Images/download121.jpg';
+import img2 from '../Images/download23.jpg';
+import img1 from '../Images/tree.jpg'
 
 const Image = ({ src }) => {
 
   const [images, setImages] = useState([
-    {id: 1, src: 'src\Components\download.jpg'},
+    {id: 1, src: 'tree'},
     {id: 2, src: "https://via.placeholder.com/100x100" },
-    {id: 3, src: "https://via.placeholder.com/100x100" },
+    {id: 3, src: img3},
   ]);
 
   console.log(images)
