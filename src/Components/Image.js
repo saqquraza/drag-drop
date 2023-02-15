@@ -157,7 +157,7 @@ import React, { useState } from 'react';
 import img1 from '../Images/tree.jpg'
 
 function Image() {
-  const [size, setSize] = useState({ width: 300, height: 300 });
+  const [size, setSize] = useState({ width: 200, height: 200 });
   const [aspectRatio, setAspectRatio] = useState(size.width / size.height);
 
   const handleDrag = (event) => {
@@ -180,9 +180,14 @@ function Image() {
   };
 
   return (
-    <div style={{ width: size.width, height: size.height, position: 'relative' , margin:'200px'}} >
+    <div style={{width:'100vw',height:'65vw', backgroundColor:"black",display:'flex',justifyContent:'center',alignItems:'center'}}>
+    <div style={{ width: size.width, height: size.height, position: 'relative' , margin:'20px',backgroundColor:'red'}} >
       <img src={img1} alt="resizeable" style={{ width: '100%', height: '100%' }} />
       <button type="button" style={{ position: 'absolute', bottom: 0, right: 0 }}  onMouseDown={handleDrag}>Resize</button>
+      <button type="button" style={{ position: 'absolute', top: 0, right: 0 }}  onMouseDown={handleDrag}>Resize</button>
+      <button type="button" style={{ position: 'absolute', bottom: 0, left: 0 }}  onMouseDown={handleDrag}>Resize</button>
+      <button type="button" style={{ position: 'absolute', top: 0, left: 0 }}  onMouseDown={handleDrag}>Resize</button>
+    </div>
     </div>
   );
 }
