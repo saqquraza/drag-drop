@@ -1,0 +1,57 @@
+.image-cont {
+    width: 30vw;
+    height: 50vw;
+    border: 1px solid black;
+    margin: 10px
+}
+
+#my-div {
+    width: 100vw;
+    height: 50vw;
+    border: 1px solid black;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-cont-img {
+    position: relative;
+    margin: 10px;
+}
+
+.top-left-div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 5px;
+    cursor: url(https://app.dochipo.com/web/images/135.png)15 15, auto;
+}
+
+.bottom-right-div {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    bottom: 0;
+    right: 0;
+    cursor: url(https://app.dochipo.com/web/images/135.png)15 15, auto;
+}
+
+.top-right-div {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    top: 0;
+    right: 0;
+    cursor: url(https://app.dochipo.com/web/images/45.png)15 15, auto;
+}
+
+.bottom-left-div {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    bottom: 0;
+    left: 0;
+    cursor: url(https://app.dochipo.com/web/images/45.png)15 15, auto;
+}
